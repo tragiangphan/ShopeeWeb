@@ -1,0 +1,49 @@
+/* ===== Variables ===== */
+:root {
+    --primary-color: #EE4D2D;
+    --light-prim: #ddd;
+    --dark-prim: #000;
+    --dark-text: #333;
+    --light-text: #fff;
+
+    /*===== App palette =====*/
+    --light-orange: #fe6433;
+    --dark-orange: #f53e2d;
+
+}
+
+
+* {
+    box-sizing: inherit;
+    list-style: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;  /* ~ 10px */
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*===== Responsive =====*/
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
