@@ -1,15 +1,17 @@
 /* ===== Variables ===== */
 :root {
     --primary-color: #EE4D2D;
-    --light-prim: #ddd;
-    --dark-prim: #000;
-    --dark-text: #333;
-    --light-text: #fff;
-    --light-grey: #ccc;
+    --primary-color-trans: rgba(0, 0, 0, 0.1);
+    --light-text: #FFFFFF;
+    --dark-text: #333333;
+    --hover: rgba(238, 238, 238, 0.9);
+    --border: #D3D3D3;
 
     /*===== App palette =====*/
-    --light-orange: #fe6433;
-    --dark-orange: #f53e2d;
+    --light-orange-bg: #FE6433;
+    --light-orange: #FFE0DA;
+    --dark-grey: #898B8A;
+
 
 }
 
