@@ -19,6 +19,7 @@
 .head__nav-item {
     margin: 0 8px;
     position: relative;
+    min-height: 28px;
 }
 
 .head__nav-item-link, 
@@ -64,4 +65,46 @@
     cursor: text;
     color: var(--light-text);
 }
+
+/* ===== QR code ===== */
+.head__nav-qr:hover .head__qr {
+    display: block;
+}
+
+.head__qr {
+    display: none;
+    background-color: var(--light-text);
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    padding: 8px;
+    border-radius: 2px;
+    animation: fadeIN ease-in-out 0.3s;
+}
+
+.head__qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -20px;
+}
+.head__qr-img {
+    width: 100%;
+}
+
+.head__qr-download {
+    display: flex;
+    align-items: center;
+    margin: 2px 5px;
+}
+
+.head__qr-store {
+    height: 17px;
+    margin: auto;
+}
+
 
