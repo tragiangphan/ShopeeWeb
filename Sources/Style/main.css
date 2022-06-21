@@ -23,7 +23,8 @@
 
 .head__nav-item-link, 
 .head__nav-item {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-size: 1.5rem;
     color: var(--light-text);
     font-weight: 300;
@@ -35,7 +36,7 @@
 }
 
 .head__nav-item:hover {
-    opacity: 0.8;
+    color: var(--light-grey);
 }
 
 .head__nav-item-span::before {
@@ -49,11 +50,18 @@
     transform: translateY(-50%);
 }
 
-.head__nav-item > i,
-.head__nav-item-link > i {
+.head__nav-item > i {
+    font-size: 1.8rem;
+    margin-right: 5px;
+}
+
+.head__nav-item-icon { 
+    margin:  0 6px;
     font-size: 1.8rem;
 }
 
-.head__nav-item-no-pointer {
+.head__nav-item-no-pointer:hover {
     cursor: text;
+    color: var(--light-text);
 }
+
