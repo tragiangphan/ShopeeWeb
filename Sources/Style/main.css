@@ -13,7 +13,7 @@
     display: inline-flex;
     align-items: center;
     padding-left: 0;
-    
+    margin: 0;
 }
 
 .head__nav-item {
@@ -25,7 +25,7 @@
 .head__nav-item {
     display: inline-flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--light-text);
     cursor: pointer;
 }
@@ -50,13 +50,13 @@
 }
 
 .head__nav-item > i {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-right: 5px;
 }
 
 .head__nav-item-icon { 
     margin:  0 6px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 .head__nav-item-no-pointer:hover {
@@ -242,7 +242,7 @@
     margin: auto;
     background-color: var(--light-text);
     border-radius: 4px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .modal__inner {
