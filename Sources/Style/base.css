@@ -10,7 +10,8 @@
     /*===== App palette =====*/
     --light-orange-bg: #FE6433;
     --light-orange: rgba(251, 87, 54, 0.1);
-    --dark-grey: #898B8A;
+    --light-grey: #898B8A;
+    --dark-grey: #777777;
     --golden-color: #FFCE3E;
 
 }
@@ -32,6 +33,15 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+
+.btn {
+
+}
+
+.btn--primary {
+
 }
 
 /*===== Responsive =====*/
