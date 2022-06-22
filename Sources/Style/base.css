@@ -5,7 +5,8 @@
     --light-text: #FFFFFF;
     --dark-text: #333333;
     --hover: rgba(238, 238, 238, 0.7);
-    --border: #D3D3D3;
+    --hover-invert: #D5D5D5;
+    --border: #E3E3E3;
 
     /*===== App palette =====*/
     --light-orange-bg: #FE6433;
@@ -37,11 +38,38 @@ a {
 
 
 .btn {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 142px;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    cursor: pointer;
 }
 
-.btn--primary {
+.btn.btn--normal {
+    background-color: var(--hover-invert);
+}
 
+.btn.btn-s {
+    padding: 0 8px;
+    height: 32px;
+    font-size: 1.2rem;
+}
+
+.btn.btn--primary {
+    color: var(--light-text);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    filter: contrast(40%);
 }
 
 /*===== Responsive =====*/
