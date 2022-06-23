@@ -1,22 +1,20 @@
 /* ===== Variables ===== */
 :root {
-    --primary-color: #EE4D2D;
+    --primary-color: #ee4d2d;
     --primary-color-trans: rgba(0, 0, 0, 0.1);
-    --light: #FFFFFF;
+    --light: #ffffff;
     --dark: #333333;
     --hover: rgba(238, 238, 238, 0.7);
-    --hover-invert: #F7F7F7;
-    --border: #E3E3E3;
+    --hover-invert: #f7f7f7;
+    --border: #e3e3e3;
 
     /*===== App palette =====*/
-    --light-orange-bg: #FE6433;
+    --light-orange-bg: #fe6433;
     --light-orange: rgba(251, 87, 54, 0.1);
-    --light-grey: #A7A7A7;
+    --light-grey: #a7a7a7;
     --dark-grey: #777777;
-    --golden-color: #FFCE3E;
-
+    --golden-color: #ffce3e;
 }
-
 
 * {
     box-sizing: inherit;
@@ -24,8 +22,8 @@
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;  /* ~ 10px */
+    font-family: "Open Sans", sans-serif;
+    font-size: 62.5%; /* ~ 10px */
     line-height: 1.6rem;
     box-sizing: border-box;
     list-style: none;
@@ -35,7 +33,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 
 .btn {
     display: flex;
@@ -72,6 +69,34 @@ a {
     filter: contrast(40%);
 }
 
+/* ==== Modal ==== */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIN linear 0.1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__wrap {
+    --scale-from: 0.7;
+    --scale-to: 1;
+    margin: auto;
+    background-color: var(--light);
+    border-radius: 4px;
+    z-index: 1;
+    animation: scales linear 0.1s;
+}
+
 /*===== Responsive =====*/
 .grid {
     width: 1200px;
@@ -95,5 +120,14 @@ a {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes scales {
+    from {
+        transform: scale(var(--scale-from));
+    }
+    to {
+        transform: scale(var(--scale-to));
     }
 }
