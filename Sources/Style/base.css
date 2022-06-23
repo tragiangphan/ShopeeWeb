@@ -1,15 +1,20 @@
-/* ===== Variables ===== */
 :root {
+    /* ===== Variables ===== */
+    --nav-height: 34px;
+    --header-height: 120px;
+    --header-search-bar: calc(var(--header-height) - var(--nav-height));
+
+    /* ===== App color ===== */
     --primary-color: #ee4d2d;
     --primary-color-trans: rgba(0, 0, 0, 0.1);
-    --light: #ffffff;
-    --dark: #333333;
+    --light: #FFFFFF;
+    --dark: #282828;
     --hover: rgba(238, 238, 238, 0.7);
-    --hover-invert: #f7f7f7;
-    --border: #e3e3e3;
+    --hover-invert: #F7F7F7;
+    --border: #BDBDBD;
 
     /*===== App palette =====*/
-    --light-orange-bg: #fe6433;
+    --light-orange-bg: #FE6433;
     --light-orange: rgba(251, 87, 54, 0.1);
     --light-grey: #a7a7a7;
     --dark-grey: #777777;
@@ -129,5 +134,16 @@ a {
     }
     to {
         transform: scale(var(--scale-to));
+    }
+}
+
+@keyframes trans {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
