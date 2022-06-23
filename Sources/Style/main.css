@@ -541,13 +541,13 @@
 
 .head__cart-noti {
     position: absolute;
-    padding: 2px 6px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    padding: 3.5px 6px 2px 6px;
+    font-size: 1.4rem;
+    font-weight: 500;
     line-height: 1.2rem;
     color: var(--primary-color);
     background-color: var(--light);
-    border-radius: 10px;
+    border-radius: 20px;
     border: var(--primary-color) solid 2.5px;
     top: -4px;
     left: 20px;
