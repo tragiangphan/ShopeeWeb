@@ -63,7 +63,7 @@
     font-size: 1.7rem;
 }
 
-.head__nav-item-no-pointer:hover {
+.head__nav-item-span:hover {
     cursor: text;
     color: var(--light);
 }
@@ -124,10 +124,10 @@
     display: block;
     transform-origin: calc(100% - 20px) 0;
     animation: trans ease-in 0.2s;
-    -webkit-animation: notiTrans ease-in 0.2s;
-    -moz-animation: notiTrans ease-in 0.2s;
-    -o-animation: notiTrans ease-in 0.2s;
-    -ms-zoom-animation: notiTrans ease-in 0.2s;
+    -webkit-animation: trans ease-in 0.2s;
+    -moz-animation: trans ease-in 0.2s;
+    -o-animation: trans ease-in 0.2s;
+    -ms-zoom-animation: trans ease-in 0.2s;
     will-change: opacity, transform;
 }
 
