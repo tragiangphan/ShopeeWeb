@@ -2,16 +2,16 @@
 :root {
     --primary-color: #EE4D2D;
     --primary-color-trans: rgba(0, 0, 0, 0.1);
-    --light-text: #FFFFFF;
-    --dark-text: #333333;
+    --light: #FFFFFF;
+    --dark: #333333;
     --hover: rgba(238, 238, 238, 0.7);
-    --hover-invert: #D5D5D5;
+    --hover-invert: #F7F7F7;
     --border: #E3E3E3;
 
     /*===== App palette =====*/
     --light-orange-bg: #FE6433;
     --light-orange: rgba(251, 87, 54, 0.1);
-    --light-grey: #898B8A;
+    --light-grey: #A7A7A7;
     --dark-grey: #777777;
     --golden-color: #FFCE3E;
 
@@ -63,7 +63,7 @@ a {
 }
 
 .btn.btn--primary {
-    color: var(--light-text);
+    color: var(--light);
     background-color: var(--primary-color);
 }
 

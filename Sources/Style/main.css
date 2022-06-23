@@ -26,7 +26,7 @@
     display: inline-flex;
     align-items: center;
     font-size: 1.4rem;
-    color: var(--light-text);
+    color: var(--light);
     cursor: pointer;
 }
 
@@ -42,7 +42,7 @@
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid var(--light-text);
+    border-left: 1px solid var(--light);
     height: 14px;
     top: 50%;
     left: -9px;
@@ -61,7 +61,7 @@
 
 .head__nav-item-no-pointer:hover {
     cursor: text;
-    color: var(--light-text);
+    color: var(--light);
 }
 
 /* ===== QR code ===== */
@@ -71,7 +71,7 @@
 
 .head__qr {
     display: none;
-    background-color: var(--light-text);
+    background-color: var(--light);
     width: 200px;
     position: absolute;
     left: 0;
@@ -133,8 +133,8 @@
     top: 100%;
     right: 0;
     width: 404px;
-    background-color: var(--light-text);
-    color: var(--dark-text);
+    background-color: var(--light);
+    color: var(--dark);
     border: var(--border) solid 1px;
     margin-top: 5px;
 }
@@ -143,7 +143,7 @@
     content: "";
     border-style: solid;
     border-width: 8px 12px;
-    border-color: transparent transparent var(--light-text) transparent;
+    border-color: transparent transparent var(--light) transparent;
     position: absolute;
     right: 12px;
     top: -16px;
@@ -151,7 +151,7 @@
 
 .head__noti-header {
     height: 40px;
-    background-color: var(--light-text);
+    background-color: var(--light);
     cursor: default;
 }
 
@@ -238,7 +238,7 @@
 
 .modal__wrap {
     margin: auto;
-    background-color: var(--light-text);
+    background-color: var(--light);
     border-radius: 4px;
     z-index: 1;
 }
@@ -257,12 +257,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 12px;
 }
 
 .modal__form-heading {
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--dark-text);
+    color: var(--dark);
 }
 
 .modal__form-switch-btn {
@@ -315,7 +317,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 32px; 
-    background-color: var(--border);
+    background-color: var(--hover);
     margin-top: 12px;
     border-radius: 0 0 3px 3px;
 }
@@ -325,19 +327,45 @@
 }
 
 .modal__form-social-item:nth-child(1) {
-    color: var(--light-text);
+    color: var(--light);
     background-color: #3A5A98;
 }
 
 .modal__form-social-item:nth-child(1) > i {
-    color: var(--light-text);
+    color: var(--light);
 }
 
 .modal__form-social-item:nth-child(2) {
-    color: var(--dark-text);
-    background-color: var(--light-text);
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 .modal__form-social-icon {
     font-size: 1.6rem;
+}
+
+/* ===== Log in form ===== */
+.modal__form-support {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.modal__form-support-link {
+    font-size: 1.3rem;
+    padding: 0 7px;
+}
+
+.modal__form-support-link:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.modal__form-support-link:nth-child(3) {
+    color: var(--dark-grey);
+}
+
+.modal__form-support > span {
+    display: block;
+    border-right: var(--border) solid 2px;
+    margin: 0 5px;
 }
