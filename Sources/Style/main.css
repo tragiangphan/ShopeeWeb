@@ -141,6 +141,7 @@
     color: var(--dark);
     border: var(--border) solid 1px;
     margin-top: 5px;
+    z-index: 1;
 }
 
 .head__noti-board::before {
@@ -365,36 +366,87 @@
     border-radius: 2px;
 }
 
-.head__searchBar-input {
+.head__searchBar-input-wrap {
+    position: relative;
     flex: 1;
+    height: 100%;
+}
+
+.head__searchBar-input {
+    width: 100%;
     height: 100%;
     border: none;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--dark);
     padding: 0 16px;
     border-radius: 2.3px;
 }
 
+.head__searchBar-input:focus ~ .head__searchBar-history {
+    display: block;
+}
+
+/* Search history */
+.head__searchBar-history {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4.5px);
+    left: 0;
+    width: calc(100% - 15px);
+    background-color: var(--light);
+    border-radius: 2.3px;
+    box-shadow: 0 0 5px var(--border);
+    overflow: hidden;
+}
+
+.head__searchBar-his-head {
+    margin: 8px 10px;
+    font-size: 1.3rem;
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.head__searchBar-his-list {
+    padding-left: 0;
+    margin: 0;
+}
+
+.head__searchBar-his-item {
+    height: 36px;
+    padding: 0 12px;
+    line-height: 36px;
+}
+
+.head__searchBar-his-item:hover {
+    background-color: var(--hover);
+}
+
+.head__searchBar-his-item a {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--dark);
+}
+
 .head__searchBar-select {
     position: relative;
     border-left: var(--border) solid 1px;
-    padding: 10px 0 10px 12px;
+    padding: 6px 0 6px 12px;
+    cursor: pointer;
 }
 
 .head__searchBar-select:hover .head__searchBar-opt {
     display: block;
-    cursor: pointer;
 }
 
 .head__searchBar-select > i {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--light-grey);
     margin: 0 16px 0 8px;
 }
 
 .head__searchBar-label {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--dark);
 }
 
@@ -426,8 +478,10 @@
     width: 130px;
     box-shadow: 0 0 3px var(--border);
     padding-left: 0;
+    margin: 11px 0;
     border-radius: 2.3px;
     overflow: hidden;
+    animation: fadeIN ease-in 0.1s;
 }
 
 .head__searchBar-select::before {
@@ -438,7 +492,6 @@
     height: 35px;
     top: 70%;
     left: 0;
-
 }
 
 .head__searchBar-opt-item {
@@ -453,12 +506,12 @@
 }
 
 .head__searchBar-opt-item > span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--dark);
 }
 
 .head__searchBar-opt-item i {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
     margin: 0 8px;
     display: none;
