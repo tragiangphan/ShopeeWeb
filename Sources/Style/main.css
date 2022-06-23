@@ -453,9 +453,9 @@
 .head__searchBar-btn {
     background-color: var(--primary-color);
     border: none;
-    height: 35px;
+    height: 36px;
     border-radius: 2.3px;
-    margin-right: 3.5px;
+    margin-right: 2.5px;
     width: 60px;
     outline: none;
 }
@@ -526,12 +526,60 @@
     width: 150px;
 }
 
-.head__cart > i {
+.head__cart-wrap > i {
     font-size: 2.3rem;
     color: var(--light);
     margin-top: 5px;
 }
 
+.head__cart-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 0 9px;
+    cursor: pointer;
+}
+
+.head__cart-list::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: -20px;
+    border-width: 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent var(--light) transparent;
+}
+
+.head__cart-wrap:hover .head__cart-list {
+    display: block;
+}
+
+.head__cart-list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 11px);
+    right: -4px;
+    background-color: var(--light);
+    width: 390px;
+    border-radius: 2.3px;
+    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    transform-origin: calc(100% - 25px) -10px;
+    animation: trans ease-in-out 0.2s;
+    cursor: default;
+}
+
+.cart-list--no-card {
+    padding: 50px 0;
+}
+
+.cart-list--no-card > h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+.cart__no-card-img {
+    width: 25%;
+}
 
 /* ===== Content =====  */
 .container {
