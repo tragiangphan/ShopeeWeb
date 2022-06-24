@@ -296,7 +296,7 @@
         <!-- Content -->
         <div class="container">
             <div class="grid">
-                <div class="grid__row">
+                <div class="grid__row container__content">
                     <div class="grid__column-left">
                         <div class="category">
                             <h3 class="category__heading">
@@ -328,8 +328,43 @@
                         </div>
                     </div>
                     <div class="grid__column-right">
-                        <div class="ctain__products">
+                        <div class="filter">
+                            <span class="filter__lable">Sort by</span>
+                            <button class="filter__btn btn">Relevance</button>
+                            <button class="filter__btn btn btn--primary">Lastest</button>
+                            <button class="filter__btn btn">Top Sales</button>
 
+                            <div class="sort-select">
+                                <span class="sort-select__label">Price</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="sort-select__list">
+                                    <li class="sort-select__item">
+                                        <a href="#" class="sort-select__link">
+                                            Price: Low to High
+                                        </a>
+                                    </li>
+                                    <li class="sort-select__item">
+                                        <a href="#" class="sort-select__link">
+                                            Price: High to Low
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pagination">
+                                <span class="pagination__num">
+                                    <span class="pagination__num-current">1</span>/14
+                                </span>
+
+                                <div class="pagination__ctrl">
+                                    <a href="#" class="pagination__ctrl-btn btn--disabled">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="pagination__ctrl-btn">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,7 +408,7 @@
                     </div>
 
                     <div class="modal__form-control">
-                        <button href="#" class="btn btn--normal">TURN BACK</button>
+                        <button href="#" class="btn">TURN BACK</button>
                         <button href="#" class="btn btn--primary">REGISTER</button>
                     </div>
                 </div>
@@ -412,7 +447,7 @@
                     </div>
 
                     <div class="modal__form-control">
-                        <button href="#" class="btn btn--normal">TURN BACK</button>
+                        <button href="#" class="btn">TURN BACK</button>
                         <button href="#" class="btn btn--primary">LOG IN</button>
                     </div>
                 </div>

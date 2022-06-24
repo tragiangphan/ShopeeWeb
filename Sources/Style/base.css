@@ -7,17 +7,17 @@
     /* ===== App color ===== */
     --primary-color: #ee4d2d;
     --primary-color-trans: rgba(0, 0, 0, 0.1);
-    --light: #FFFFFF;
-    --dark: #282828;
+    --light: #ffffff;
+    --dark: #535353;
     --hover: rgba(238, 238, 238, 0.8);
-    --light-hover: #F6F6F6;
-    --border: rgba(191, 191, 191, 0.8);
+    --light-hover: #F9F9F9;
+    --border: rgba(191, 191, 191, 0.6);
 
     /*===== App palette =====*/
-    --light-orange-bg: #FE6433;
+    --light-orange-bg: #fe6433;
     --light-orange: rgba(251, 87, 54, 0.1);
-    --light-grey: #a7a7a7;
-    --dark-grey: #777777;
+    --light-grey: #dedede;
+    --dark-grey: #979797;
     --golden-color: #ffce3e;
 }
 
@@ -41,7 +41,7 @@ a {
 }
 
 .btn {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     min-width: 142px;
@@ -50,13 +50,10 @@ a {
     border-radius: 2px;
     padding: 0 12px;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--dark-text);
     cursor: pointer;
-}
-
-.btn.btn--normal {
-    background-color: var(--hover-invert);
+    background-color: var(--light);
 }
 
 .btn.btn-s {
@@ -70,9 +67,64 @@ a {
     background-color: var(--primary-color);
 }
 
+.btn.btn--primary:hover {
+    background-color: var(--light-orange-bg);
+}
+
 .btn.btn--disabled {
     cursor: default;
     filter: contrast(40%);
+}
+
+/* ===== Selection ===== */
+.sort-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 34px;
+    min-width: 200px;
+    min-height: 35px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--light);
+}
+
+.sort-select:hover .sort-select__list {
+    display: block;
+}
+
+.sort-select__label {
+    font-size: 1.3rem;
+}
+
+.sort-select > i {
+    font-size: 1.3rem;
+    color: var(--dark-grey);
+}
+
+.sort-select__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+    border-radius: 2px;
+    background-color: var(--light);
+    padding: 6px 16px;
+}
+
+.sort-select__item {
+    font-size: 1.3rem;
+    color: var(--dark);
+    padding: 8px 0;
+}
+
+.sort-select__item:hover {
+    color: var(--primary-color);
+}
+
+.sort-select__link {
 }
 
 /* ==== Modal ==== */
