@@ -81,15 +81,15 @@
 
 .head__nav-user:hover .head__nav-user-menu {
     display: block;
-    transform-origin: calc(100% - 8px) -15px;
+    transform-origin: calc(100% - 10px) -15px;
     animation: trans ease-in 0.2s;
 }
 
 .head__nav-user-img {
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    border: var(--primary-color-trans) solid 2px;
+    border-radius: 50px;
+    border: var(--light-orange-bg) solid 1px;
 }
 
 .head__nav-username {
@@ -129,6 +129,10 @@
 .head__nav-user-menu-item:hover {
     color: #17c7b2;
     background-color: var(--light-hover);
+}
+
+.head__nav-user-menu-item:nth-child(3):hover {
+    color: var(--primary-color);
 }
 
 .head__nav-item-span:hover {
@@ -191,7 +195,7 @@
 
 .head__nav-item:hover .head__nav-item-link ~ .head__noti-board {
     display: block;
-    transform-origin: calc(100% - 20px) 0;
+    transform-origin: calc(100% - 32px) 0;
     animation: trans ease-in 0.2s;
     -webkit-animation: trans ease-in 0.2s;
     -moz-animation: trans ease-in 0.2s;
@@ -212,7 +216,6 @@
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     margin-top: 5px;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -220,6 +223,7 @@
     content: "";
     border-style: solid;
     border-width: 8px 12px;
+    display: block;
     border-color: transparent transparent var(--light) transparent;
     position: absolute;
     right: 12px;
@@ -629,6 +633,7 @@
 
 .head__cart-list::after {
     content: "";
+    display: block;
     position: absolute;
     right: 8px;
     top: -20px;
