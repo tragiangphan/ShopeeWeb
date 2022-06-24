@@ -554,7 +554,7 @@
     width: 130px;
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     padding-left: 0;
-    margin: 11px 0;
+    margin: 10.5px 0;
     border-radius: 2.3px;
     overflow: hidden;
     animation: fadeIN ease-in 0.1s;
@@ -597,6 +597,8 @@
     display: inline-block;
 }
 
+
+/* ===== Cart ===== */
 .head__cart {
     text-align: center;
     width: 150px;
@@ -657,7 +659,7 @@
 .head__cart-list {
     display: none;
     position: absolute;
-    top: calc(100% + 11px);
+    top: calc(100% + 8px);
     right: -4px;
     background-color: var(--light);
     width: 390px;
