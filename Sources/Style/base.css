@@ -10,7 +10,7 @@
     --light: #FFFFFF;
     --dark: #282828;
     --hover: rgba(238, 238, 238, 0.8);
-    --light-hover: #F7F7F7;
+    --light-hover: #F6F6F6;
     --border: rgba(191, 191, 191, 0.8);
 
     /*===== App palette =====*/
@@ -117,6 +117,20 @@ a {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-left {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100% / 12) * 2);
+}
+
+.grid__column-right {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100% / 12) * 10);
 }
 
 /*===== Animation =====*/
