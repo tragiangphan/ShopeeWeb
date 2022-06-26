@@ -727,6 +727,8 @@
 .head__cart-product-list {
     padding: 0;
     margin: 0;
+    height: 40vh;
+    overflow-y: scroll;
 }
 
 .head__cart-pro-item {
