@@ -1122,3 +1122,13 @@
     line-height: 1.4rem;
     font-weight: 500;
 }
+
+/* ===== Footer ===== */
+.footer {
+    border-top: var(--primary-color) solid 4px;
+    background-color: var(--light-hover);
+}
+
+.footer__heading {
+
+}
