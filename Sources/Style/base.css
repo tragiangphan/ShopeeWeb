@@ -131,6 +131,40 @@ a {
     color: var(--primary-color);
 }
 
+/* ===== Pagination footer ===== */
+.pagi-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagi-footer__item {
+    margin: 0 12px;
+}
+
+.pagi-footer__item-link {
+    --height: 30px;
+    display: block;
+    color: var(--dark-grey);
+    font-size: 1.6rem;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+}
+
+.pagi-footer__item-link--active {
+    background-color: var(--primary-color);
+    color: var(--light);
+}
+
+.pagi-footer__item-link--active:hover {
+    background-color: var(--light-orange-bg);
+}
+
+.mt-pagi {
+    margin: 26px 0;
+}
 
 /* ==== Modal ==== */
 .modal {

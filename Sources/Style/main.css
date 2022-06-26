@@ -970,8 +970,7 @@
 }
 
 .product-item__block {
-    padding: 0 6px;
-    margin: 6px 0;
+    padding: 6px 8px 8px;
 }
 
 .product-item__name {
