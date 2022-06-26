@@ -27,8 +27,8 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Open Sans", sans-serif;
     font-size: 62.5%; /* ~ 10px */
     line-height: 1.6rem;
     box-sizing: border-box;
@@ -93,6 +93,7 @@ a {
     padding: 0 12px;
     border-radius: 2px;
     background-color: var(--light);
+    z-index: 1;
 }
 
 .sort-select:hover .sort-select__list {
@@ -101,6 +102,7 @@ a {
 
 .sort-select__label {
     font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .sort-select > i {
@@ -129,8 +131,6 @@ a {
     color: var(--primary-color);
 }
 
-.sort-select__link {
-}
 
 /* ==== Modal ==== */
 .modal {
@@ -225,5 +225,14 @@ a {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1px);
     }
 }
