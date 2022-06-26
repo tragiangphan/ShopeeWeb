@@ -218,7 +218,7 @@
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     margin-top: 5px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .head__noti-board::before {
@@ -378,6 +378,7 @@
 .modal__form-social-item:nth-child(1) {
     color: var(--light);
     background-color: #3a5a98;
+    margin-right: 6px;
 }
 
 .modal__form-social-item:nth-child(1) > i {
@@ -387,6 +388,8 @@
 .modal__form-social-item:nth-child(2) {
     color: var(--dark);
     background-color: var(--light);
+    flex: 1;
+    margin-left: 6px;
 }
 
 .modal__form-social-icon {
@@ -415,7 +418,7 @@
 
 .modal__form-support > span {
     display: block;
-    border-right: var(--border) solid 2px;
+    border-right: var(--border) solid 1.5px;
     margin: 0 5px;
 }
 
@@ -681,6 +684,7 @@
     transform-origin: calc(100% - 25px) -10px;
     animation: trans ease-in-out 0.2s;
     cursor: default;
+    z-index: 2;
 }
 
 .cart-list--no-card {
@@ -825,7 +829,7 @@
 
 .category__heading {
     font-size: 1.6rem;
-    padding: 12px 0;
+    padding: 17px 0;
     border-bottom: var(--border) solid 1px;
     margin: 16px;
     margin-top: 0;
@@ -873,7 +877,7 @@
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.05);
-    padding: 12px 20px;
+    padding: 8px 16px;
     border-radius: 2px;
 }
 

@@ -4,20 +4,20 @@
     --header-height: 120px;
     --header-search-bar: calc(var(--header-height) - var(--nav-height));
 
-    /* ===== App color ===== */
+    /* ===== Basic color ===== */
     --primary-color: #ee4d2d;
     --primary-color-trans: rgba(0, 0, 0, 0.1);
     --light: #ffffff;
     --dark: #535353;
     --hover: rgba(238, 238, 238, 0.8);
-    --light-hover: #F9F9F9;
+    --light-hover: #f9f9f9;
     --border: rgba(191, 191, 191, 0.6);
 
     /*===== App palette =====*/
     --light-orange-bg: #fe6433;
     --light-orange: rgba(251, 87, 54, 0.1);
     --light-grey: #dedede;
-    --dark-grey: #979797;
+    --dark-grey: #909090;
     --golden-color: #ffce3e;
 }
 
@@ -54,6 +54,11 @@ a {
     color: var(--dark-text);
     cursor: pointer;
     background-color: var(--light);
+}
+
+.btn.btn--normal {
+    border: var(--border) solid 1px;
+    box-shadow: 1.5px 1.5px 3px var(--hover);
 }
 
 .btn.btn-s {
