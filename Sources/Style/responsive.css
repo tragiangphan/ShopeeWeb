@@ -1,0 +1,17 @@
+/* Smartphones ----------- */
+@media only screen and (max-width: 739px) {
+    /* Styles */
+
+}
+
+/* iPads ----------- */
+@media only screen and (min-width: 740px) and (max-device-width: 1023px) {
+    /* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+    /* Styles */
+    
+}
