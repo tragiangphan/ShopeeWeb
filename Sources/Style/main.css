@@ -1160,6 +1160,7 @@
 
 .footer__download {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer__download-qr {
