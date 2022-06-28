@@ -3,6 +3,7 @@
     --nav-height: 34px;
     --header-height: 120px;
     --header-search-bar: calc(var(--header-height) - var(--nav-height));
+    --header-sort-bar-height: 46px;
 
     /* ===== Basic color ===== */
     --primary-color: #ee4d2d;

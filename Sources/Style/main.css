@@ -822,7 +822,51 @@
     color: var(--light-orange-bg);
 }
 
-/* ===== Container =====  */
+/* ===== Header Sort bar ===== */
+.head__sort-bar {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    width: 100%;
+    height: var(--header-sort-bar-height) ;
+    background-color: var(--light);
+    margin: 0;
+    padding-left: 0;
+    border-top: var(--border) solid 1px;
+    border-bottom: var(--border) solid 1px;
+}
+
+.head__sort-item {
+    flex: 1;
+}
+
+.head__sort-item-link {
+    color: var(--dark);
+    font-size: 1.3rem;
+    display: block;
+    height: 100%;
+    line-height: var(--header-sort-bar-height);
+    text-align: center;
+}
+
+.head__sort-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 60%;
+    border-left: var(--border) solid 1px;
+    transform: translateY(-50%);
+}
+
+.head__sort-item:nth-child(1)::before {
+    display: none;
+}
+
+.head__sort-item-active .head__sort-item-link {
+    color: var(--primary-color);
+}
+
+/* ===== Container ===== */
 .container {
     background-color: var(--hover);
     height: 100%;
