@@ -10,11 +10,39 @@
     .hide-on-mb-tb {
         display: none;
     }
+    
+    .header {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        top: 0;
+    }
+
+    .container {
+        margin-top: var(--header-height);
+    }
 
     .head__cart {
         width: 80px;
         text-align: right;
     }
+
+    .head__cart-noti {
+        text-align: center;
+    }
+
+    .head__cart-list {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+
+    .head__cart-list::after {
+        display: none;
+    }
+
 }
 
 /* Smartphones ----------- */

@@ -727,7 +727,7 @@
 .head__cart-product-list {
     padding: 0;
     margin: 0;
-    height: 40vh;
+    max-height: 25vh;
     overflow-y: scroll;
 }
 
