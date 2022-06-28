@@ -1,8 +1,19 @@
 /* Smartphones & iPads----------- */
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 63.9375em) {
     /* Styles */
+    :root {
+        /* ===== Variables ===== */
+        --nav-height: 0px;
+        --header-height: 68px;
+    }
+
     .hide-on-mb-tb {
         display: none;
+    }
+
+    .head__cart {
+        width: 80px;
+        text-align: right;
     }
 }
 
