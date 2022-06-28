@@ -1,17 +1,28 @@
+/* Smartphones & iPads----------- */
+@media only screen and (max-width: 64em) {
+    /* Styles */
+    .hide-on-mb-tb {
+        display: none;
+    }
+}
+
 /* Smartphones ----------- */
 @media only screen and (min-width: 20em) and (max-width: 30em) {
     /* Styles */
-
+    .hide-on-mb {
+        display: none;
+    }
 }
 
 /* iPads ----------- */
 @media only screen and (min-width: 48em) and (max-width: 64em) {
     /* Styles */
-
+    .hide-on-tb {
+        display: none;
+    }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 76.5em) {
     /* Styles */
-
 }
