@@ -55,6 +55,10 @@
         justify-content: space-between;
     }
 
+    .product-item {
+        margin: 4px 0;
+    }
+
     .head__logo,
     .head__cart {
         width: unset;
@@ -97,7 +101,7 @@
     }
 
     .pagi-footer__item-link {
-        --height: 28px;;
+        --height: 28px;
         font-size: 1.3rem;
         min-width: 36px;
         height: var(--height);
@@ -105,6 +109,7 @@
 
     .container__content {
         margin: 0 4px;
+        padding-top: 8px;
     }
 
     @keyframes slideDOWN {
@@ -134,9 +139,16 @@
     .head__cart-noti {
         text-align: center;
     }
+
+    .product-item {
+        margin: 8px 0;
+    }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 64em) {
     /* Styles */
+    .hide-on-pc {
+        display: none;
+    }
 }
