@@ -1232,14 +1232,16 @@
 .footer {
     border-top: var(--primary-color) solid 4px;
     background-color: var(--light-hover);
-    padding-bottom: 40px;
 }
 
+.footer > div {
+    padding-bottom: 40px;
+}
 
 .footer__heading {
     font-size: 1.4rem;
     color: var(--dark);
-    padding: 12px 0;
+    padding: 32px 0 16px;
 }
 
 .footer__list {
@@ -1269,35 +1271,31 @@
 }
 
 .footer__download-qr {
-    width: 50%;
-    height: 50%;
+    flex: 1;
+    width: 60px;
     border: var(--border) solid 1px;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .footer__download-apps {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer__download-img {
-    width: 100%;
-    height: calc(100% / 3=2);
-    margin: 5px 8px;
+    width: calc(100% / 2.5);
+    margin: 0 8px;
 }
 
-.container-l {
+.footer__copyright {
     display: flex;
-    background-color: var(--hover);
+    background-color: var(--border);
     min-height: 40px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-.footer__copyright {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 500;

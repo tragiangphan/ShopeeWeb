@@ -116,6 +116,10 @@
         padding-top: 8px;
     }
 
+    .footer > div {
+        padding: 0 16px 32px;
+    }
+
     @keyframes slideDOWN {
         from {
             opacity: 0;
