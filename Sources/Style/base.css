@@ -137,6 +137,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .pagi-footer__item {

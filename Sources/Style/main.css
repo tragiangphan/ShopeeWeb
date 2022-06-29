@@ -881,10 +881,11 @@
 .container {
     background-color: var(--hover);
     height: 100%;
+    overflow: hidden;
 }
 
 .container__content {
-    padding-top: 16px;
+    padding-top: 12px;
 }
 
 .category__heading {
@@ -1219,8 +1220,8 @@
 }
 
 .footer__download-qr {
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
     border: var(--border) solid 1px;
     margin-right: 8px;
 }
@@ -1233,7 +1234,8 @@
 }
 
 .footer__download-img {
-    height: 20px;
+    width: 100%;
+    height: calc(100% / 3=2);
     margin: 5px 8px;
 }
 
@@ -1243,6 +1245,7 @@
     min-height: 40px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .footer__copyright {

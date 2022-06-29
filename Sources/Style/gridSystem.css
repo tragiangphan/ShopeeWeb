@@ -151,16 +151,25 @@
     }
 
     .col {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 8px;
     }
 
     .tb-0 {
         display: none;
     }
 
-    .tb-1, .tb-2, .tb-3, .tb-4, .tb-5, .tb-6,
-    .tb-7, .tb-8, .tb-9, .tb-10, .tb-11, .tb-12 {
+    .tb-1,
+    .tb-2,
+    .tb-3,
+    .tb-4,
+    .tb-5,
+    .tb-6,
+    .tb-7,
+    .tb-8,
+    .tb-9,
+    .tb-10,
+    .tb-11,
+    .tb-12 {
         display: block;
     }
 
@@ -287,8 +296,7 @@
     }
 
     .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 5px;
     }
 
     .pc-0 {
@@ -450,8 +458,7 @@
     }
 
     .wide .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 5px;
     }
 
     .wide .pc-0 {
