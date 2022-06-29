@@ -936,10 +936,6 @@
 }
 
 /* ===== Mobile category ===== */
-.mobile-category{
-
-}
-
 .mobile-category__list {
     display: flex;
     padding-left: 0;
@@ -952,8 +948,6 @@
 }
 
 .mobile-category__list-item {
-    display: flex;
-    align-items: center;
     flex-shrink: 0;
     background-color: #76C9BD;
     border-radius: 5px;
@@ -982,7 +976,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    padding: 0 4px;
+    padding: 0 6px;
     user-select: none;
     -webkit-user-select: none;
 }

@@ -64,6 +64,10 @@
         width: unset;
     }
 
+    .head__logo-img {
+        width: 110px;
+    }
+
     .head__cart-wrap {
         padding: 0 8px;
         margin: 0 16px;
