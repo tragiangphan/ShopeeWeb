@@ -26,6 +26,25 @@
 <body>
     <div class="main">
         <!-- Header -->
+        <ul class="head__sort-bar">
+            <li class="head__sort-item">
+                <a href="#" class="head__sort-item-link">
+                    Relevance
+                </a>
+            </li>
+            <li class="head__sort-item head__sort-item-active">
+                <a href="#" class="head__sort-item-link">Lastest</a>
+            </li>
+            <li class="head__sort-item">
+                <a href="#" class="head__sort-item-link">Top Sales</a>
+            </li>
+            <li class="head__sort-item">
+                <a href="#" class="head__sort-item-link">
+                    Price
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+        </ul>
         <div class="header">
             <div class="grid wide">
                 <div class="head__navbar hide-on-mb-tb">
@@ -145,8 +164,13 @@
                     </ul>
                 </div>
                 <!-- Header with search -->
-                <div class="head__search">
-                    <a href="#" class="head__logo hide-on-mb-tb">
+                <label for="mobile-search-input" class="head__search">
+                    <label for="mobile-search-input" class="head__search-on-mb">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input type="checkbox" hidden name="" id="mobile-search-input">
+                    
+                    <a href="#" class="head__logo hide-on-tb">
                         <svg viewBox="0 0 192 65" class="head__logo-img">
                             <g fill-rule="evenodd">
                                 <path fill="#FFFFFF"
@@ -186,7 +210,6 @@
                                 </li>
                             </ul>
                         </div>
-
 
                         <button class="head__searchBar-btn">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -360,27 +383,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <ul class="head__sort-bar">
-                <li class="head__sort-item">
-                    <a href="#" class="head__sort-item-link">Relevance</a>
-                </li>
-                <li class="head__sort-item head__sort-item-active">
-                    <a href="#" class="head__sort-item-link">Lastest</a>
-                </li>
-                <li class="head__sort-item">
-                    <a href="#" class="head__sort-item-link">Top Sales</a>
-                </li>
-                <li class="head__sort-item">
-                    <a href="#" class="head__sort-item-link">
-                        Price
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                </li>
-            </ul>
+                </label>
+            </div>            
         </div>
+
+        
         <!-- Content -->
         <div class="container">
             <div class="grid wide">
