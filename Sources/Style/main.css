@@ -697,7 +697,7 @@
     transform-origin: calc(100% - 25px) -10px;
     animation: trans ease-in-out 0.2s;
     cursor: default;
-    z-index: 2;
+    z-index: 6;
 }
 
 .cart-list--no-card {
@@ -1267,26 +1267,26 @@
 
 .footer__download {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer__download-qr {
-    flex: 1;
-    width: 60px;
     border: var(--border) solid 1px;
     margin-right: 12px;
+    width: 25%;
+    height: 25%;
 }
 
 .footer__download-apps {
-    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 120px;
 }
 
 .footer__download-img {
-    width: calc(100% / 2.5);
+    width: 80%;
     margin: 0 8px;
+    padding: 6px 0;
 }
 
 .footer__copyright {

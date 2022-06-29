@@ -1,12 +1,6 @@
 /* Smartphones & iPads----------- */
 @media only screen and (max-width: 63.9375em) {
     /* Styles */
-    :root {
-        /* ===== Variables ===== */
-        --nav-height: 0px;
-        --header-height: 68px;
-    }
-
     .hide-on-mb-tb {
         display: none;
     }
@@ -43,6 +37,12 @@
 /* Smartphones ----------- */
 @media only screen and (max-width: 47.875em) {
     /* Styles */
+    :root {
+        /* ===== Variables ===== */
+        --nav-height: 0px;
+        --header-height: 54px;
+    }
+
     .header {
         z-index: 5;
     }
@@ -120,6 +120,15 @@
         padding: 0 16px 32px;
     }
 
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer__download, 
+    .footer__list-item-link {
+        justify-content: center;
+    }
+
     @keyframes slideDOWN {
         from {
             opacity: 0;
@@ -135,6 +144,12 @@
 /* iPads ----------- */
 @media only screen and (min-width: 48em) and (max-width: 63.9375em) {
     /* Styles */
+    :root {
+        /* ===== Variables ===== */
+        --nav-height: 0px;
+        --header-height: 68px;
+    }
+
     .hide-on-tb {
         display: none;
     }
@@ -158,5 +173,13 @@
     /* Styles */
     .hide-on-pc {
         display: none;
+    }
+
+    .footer__download-qr {
+        width: 40%;
+    }
+
+    .footer__download-apps {
+        width: 50%;
     }
 }
